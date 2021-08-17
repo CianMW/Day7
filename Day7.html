@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body>
-    <Header>
-        <h1 >Angry Octopus Inc.</h1>
-    </Header>
-    <h3>Our Best Sellers!!</h3>
+<body style = "background-color : undefined" >
+  <Header>
+      <h1 ; style = "text-align: center ;background: purple; color: white; width: 100%">Angry Octopus Inc.</h1>
+  </Header>
+  <h3>Our Best Sellers!!</h3>
     <table>
         <thead>
           <tr>
@@ -61,7 +61,29 @@
           </tr>
         </tbody>
         </table>
+  <input type="search"
+  <input type=button value="click me" onclick="changeH1Text(value)"> 
 
+<footer style = " left: 0; bottom: 0; width: 100%; background-color: rgb(253, 5, 212); color: white; text-align: center;">
+  <p> Octopus Inc ©</p>
+  <span  style = "text-align: right;">4, hogfield Lane</span>
+</footer>
+<script lang = "text/javascript">
+Const changeH1Text =(string) => {
+  let heading1 = document.getElementsByTagName('h1')[0] ;
+  heading1.textContent = string
+ 
+}
+changeH1Text("Weird Octopi shop")
+const changeBackgroundColor = () => {
+  let background = document.getElementsByTagName("body")[0]
+  if (background.style.backgroundColor === undefined) {
+    background.style.backgroundColor = 'red'
+  } 
+}
 
+changeBackgroundColor()
+
+</script>
 </body>
 </html>
