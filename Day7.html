@@ -61,13 +61,29 @@
           </tr>
         </tbody>
         </table>
-  <input type="button" value="Lets change the shps name!" onclick="changeH1Text()">
-  <input type="button" value="click me" onclick="changeBackgroundColor()">
+
+
+    <form action="/html/tags/html_form_tag_action.cfm" method="post">
+          <div>
+          <textarea name="comments" id="comments" style = "position: center;";">which octopus could you beat in a fight?</textarea>
+          </div>
+          <input type="submit" value="post">
+    </form>
+
+
+
+  <input style= "align-content:stretch" type="button" value="Lets change the shops name!" onclick="changeH1Text()">
+  <input  style= "align-content:stretch" type="button" value="click me" onclick="changeBackgroundColor()">
+  <input  style= "align-content:stretch"; type="button" value="click to place our real address" onclick="swapRealFooter()">
+  <input  style= "align-content:stretch"; type="button" value="click to make classy" onclick="createAmazonLinkClasses()">
 
 <footer style = " left: 0; bottom: 0; width: 100%; background-color: rgb(253, 5, 212); color: white; text-align: center;">
   <p> Octopus Inc ©</p>
-  <span  style = "text-align: right;">4, hogfield Lane</span>
+  <span id='address' ; style = "text-align: right;">4, hogfield Lane</span>
 </footer>
+
+
+
   <script lang = "text/javascript">
   const changeH1Text =() => {
     let heading1 = document.getElementsByTagName('h1')[0] ;
@@ -76,10 +92,28 @@
 
   const changeBackgroundColor = () => {
     let background = document.getElementsByTagName("body")[0]
-      background.style.background = 'gray'
+      //background.style.background = 'gray'
+      if (background.style.background !== 'gray') {
+        background.style.background = 'gray'
+      } else {
+        background.style.background.remove("gray")
+      }
     }
 
+  const swapRealFooter = () => {
+    let address = document.getElementById('address')
+    address.textContent = 'Earth, the Solar System, Oort Cloud, Local Fluff, Local Bubble, Orion Arm, Milky Way Galaxy, Local Group, Virgo Supercluster, Laniakea Supercluster, Universe'
+  }
 
+  const createAmazonLinkClasses = () => {
+    const amazonLinks = document.getElementsByTagName('a')
+    for (let i = 0; i < amazonLinks.length; i++) {
+      let specificLink = amazonLinks[i];
+      specificLink.classList.add("CSS")
+      
+    }
+      
+    }
 
   </script>
 </body>
