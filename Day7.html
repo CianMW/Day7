@@ -29,35 +29,35 @@
             <td style="width:100px; height:100px;;text-align:center; vertical-align:middle"><img src="https://m.media-amazon.com/images/I/71gX4WeWlAS._AC_SL1500_.jpg"  style="max-height:100%; max-width:100%"/></td>
             <td><a href="https://www.amazon.co.uk/Octopus-Reversible-Plushie-Double-Sided-Stuffed/dp/B096X7N3W7/ref=sr_1_37?crid=1WLCRAPZ1U06V&dchild=1&keywords=angry+octopus&qid=1629204414&sprefix=angry+octo%2Caps%2C161&sr=8-37"> Reversible Plushie</a></td>
             <td>A soft purple octopus , just perfect for hugging. Be careful though! hug it too tight and it might just die!</td>
-            <td>£6.99</td>
+            <td class='price' >£6.99</td>
           </tr>
           <tr>
             <td>#2</td>
             <td style="width:100px; height:100px;;text-align:center; vertical-align:middle"><img src ="https://m.media-amazon.com/images/I/81yunJDcv4S._AC_SL1500_.jpg" style="max-height:100%; max-width:100%"></td>
             <td><a href="https://www.amazon.co.uk/Octopus-Reversible-Plushies-suitable-difference/dp/B08ZJGKT2W/ref=sr_1_17_sspa?crid=1WLCRAPZ1U06V&dchild=1&keywords=angry+octopus&qid=1629204414&sprefix=angry+octo%2Caps%2C161&sr=8-17-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWURCNloxMEtLNElFJmVuY3J5cHRlZElkPUEwMTEzMzI1M0JTNUlRMFI0TTVNTyZlbmNyeXB0ZWRBZElkPUEwNTc4Mzc5M0hTQjBKRDFDNUZaTSZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="> Reversible Plushie</a></td>
             <td>A lovely purple and green reversible octopus , go back to you neon punk roots with this stylish octopus.</td>
-            <td>£8.99</td>
+            <td class='price' >£8.99</td>
           </tr>
           <tr>
             <td>#3</td>
             <td style="width:100px; height:100px;;text-align:center; vertical-align:middle"><img src ="https://m.media-amazon.com/images/I/61ALIi08XoL._AC_SL1200_.jpg" style="max-height:100%; max-width:100%"></td>
             <td><a href="https://www.amazon.co.uk/CS-COSDDI-Octopus-Reversible-Keychain/dp/B097R7FNNN/ref=sr_1_10?crid=1WLCRAPZ1U06V&dchild=1&keywords=angry+octopus&qid=1629204414&sprefix=angry+octo%2Caps%2C161&sr=8-10"> Reversible Plushie</a></td>
             <td>Now you too can bring your octopus on the go with these mini reversible octopi keychains.squeeze your angry little friend anywhere!</td>
-            <td>£7.59</td>
+            <td class='price' >£7.59</td>
           </tr>
           <tr>
             <td>#4</td>
             <td style="width:100px; height:100px;;text-align:center; vertical-align:middle"><img src ="https://m.media-amazon.com/images/I/81VNRPfrY2S._AC_SL1500_.jpg" style="max-height:100%; max-width:100%"></td>
             <td><a href="https://www.amazon.co.uk/babaPLUSH-Octopus-Reversible-Plushie-Blue-Purple/dp/B08WPBD27D/ref=sr_1_5?crid=1WLCRAPZ1U06V&dchild=1&keywords=angry+octopus&qid=1629204414&sprefix=angry+octo%2Caps%2C161&sr=8-5"> Reversible Plushie</a></td>
             <td>For those mellow times these soothing blue and purple reversible octopi are perfectly punchable.</td>
-            <td>£7.99</td>
+            <td class='price' >£7.99</td>
           </tr>
           <tr>
             <td>#5</td>
             <td style="width:100px; height:100px;;text-align:center; vertical-align:middle"><img src ="https://m.media-amazon.com/images/I/71mmQyHuutL._AC_SL1500_.jpg" style="max-height:100%; max-width:100%"></td>
             <td><a href="https://www.amazon.co.uk/dp/B096T76BGV/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=86b1c734ef046331da4bef39d19ff80e&hsa_cr_id=9234429530102&pd_rd_plhdr=t&pd_rd_r=c49e1b19-9088-4dd0-ab9d-394f218af0fd&pd_rd_w=7XQbA&pd_rd_wg=8Wt1V&ref_=sbx_be_s_sparkle_mcd_asin_1_title"> Reversible Plushie</a></td>
             <td>Do you have a cat or a fox but don't want to take your stress out on a poor defenceless animal because you're a good person. This Cat fox reversible plushie is perfectly capable of taking a throw out the window of a six storey building</td>
-            <td>£7.99</td>
+            <td class='price' >£7.99</td>
           </tr>
         </tbody>
         </table>
@@ -76,6 +76,7 @@
   <input  style= "align-content:stretch" type="button" value="click me" onclick="changeBackgroundColor()">
   <input  style= "align-content:stretch"; type="button" value="click to place our real address" onclick="swapRealFooter()">
   <input  style= "align-content:stretch"; type="button" value="click to make classy" onclick="createAmazonLinkClasses()">
+  <input  style= "align-content:stretch"; type="button" value="Price Party Time!" onclick="changePriceColor()">
 
 <footer style = " left: 0; bottom: 0; width: 100%; background-color: rgb(253, 5, 212); color: white; text-align: center;">
   <p> Octopus Inc ©</p>
@@ -110,11 +111,22 @@
     for (let i = 0; i < amazonLinks.length; i++) {
       let specificLink = amazonLinks[i];
       specificLink.classList.add("CSS")
-      
-    }
-      
+        } 
     }
 
+    const generateRandomColor = () => {
+      let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16)
+      return randomColor
+    }
+
+    const changePriceColor = () => {
+      const price = document.getElementsByClassName('price')
+      let randomColor = generateRandomColor()
+      for (let i = 0; i < price.length; i++) {
+        const specificCellPrice = price[i];
+        specificCellPrice.style.color = generateRandomColor()        
+      }
+    }
   </script>
 </body>
 </html>
