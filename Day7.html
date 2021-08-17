@@ -61,29 +61,26 @@
           </tr>
         </tbody>
         </table>
-  <input type="search"
-  <input type=button value="click me" onclick="changeH1Text(value)"> 
+  <input type="button" value="Lets change the shps name!" onclick="changeH1Text()">
+  <input type="button" value="click me" onclick="changeBackgroundColor()">
 
 <footer style = " left: 0; bottom: 0; width: 100%; background-color: rgb(253, 5, 212); color: white; text-align: center;">
   <p> Octopus Inc ©</p>
   <span  style = "text-align: right;">4, hogfield Lane</span>
 </footer>
-<script lang = "text/javascript">
-Const changeH1Text =(string) => {
-  let heading1 = document.getElementsByTagName('h1')[0] ;
-  heading1.textContent = string
- 
-}
-changeH1Text("Weird Octopi shop")
-const changeBackgroundColor = () => {
-  let background = document.getElementsByTagName("body")[0]
-  if (background.style.backgroundColor === undefined) {
-    background.style.backgroundColor = 'red'
-  } 
-}
+  <script lang = "text/javascript">
+  const changeH1Text =() => {
+    let heading1 = document.getElementsByTagName('h1')[0] ;
+    heading1.textContent = 'Random Octopus shop'
+  }
 
-changeBackgroundColor()
+  const changeBackgroundColor = () => {
+    let background = document.getElementsByTagName("body")[0]
+      background.style.background = 'gray'
+    }
 
-</script>
+
+
+  </script>
 </body>
 </html>
